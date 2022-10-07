@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
-import { login } from "../src/Login/actions/user.actions.types";
+import { login } from "../actions/user.actions.types";
 import { connect } from "react-redux";
+import "./App.css";
 
 const LoginPage: React.FC<{}> = (props: any) => {
   const emailRef: React.RefObject<HTMLInputElement> = useRef(null);
