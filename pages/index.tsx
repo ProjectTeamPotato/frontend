@@ -21,6 +21,7 @@ const LoginPage: React.FC<{}> = (props: any) => {
     props.login(data);
   };
 
+
   return (
     <div>
       <div className="form-floating">
