@@ -1,30 +1,16 @@
-import { useEffect, useState } from "react";
-import Input from "../Input";
-import { LoginButton, Wrap } from "./styled";
+import { Input, Button } from 'antd';
+import React from 'react';
+import "antd/dist/antd.css";
+import { Wrap } from './styled';
+
 
 const Login = () => {
-    const [id, setId] = useState();
-    const [password, setPassword] = useState();
-
-    const isValidLogin = () => {
-        if (!id || !password) {
-            alert('fail');
-        }
-
-        alert('ok');
-    }
-
-    useEffect(() => {
-        console.log(id, password);
-    }, [id, password]);
-    
-    return (
+   
+   return (
         <Wrap>
-            <Input placeholder="아이디" onChange={(e) => setId(e.target.value)}/>
-            <Input placeholder="비밀번호" onChange={(e) => setPassword(e.target.value)}/>            
-            <LoginButton onClick={ isValidLogin }>
-                로그인
-            </LoginButton>
+            <Input placeholder='아이디' style={{width: 400}}/>
+            <Input placeholder='비밀번호' style={{width: 400, marginTop: 20}}/>            
+            <Button type="primary" danger style={{width: 400, marginTop: 40}}>로그인</Button>
         </Wrap>
     )
 }
