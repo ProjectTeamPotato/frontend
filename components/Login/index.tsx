@@ -5,7 +5,7 @@ import { Wrap } from './styled';
 
 
 const Login = () => {
-   
+   const a = 2;
    return (
         <Wrap>
             <Input placeholder='아이디' style={{width: 400}}/>
