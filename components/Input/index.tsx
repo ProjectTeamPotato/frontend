@@ -1,13 +1,12 @@
-import { useState } from "react";
-import { Label, StyledInput } from "./styled";
+import { Input } from 'antd';
+import React from 'react';
 
-const Input = ({ placeholder, className, onChange }) => {
+const StyledInput = () => {
     return (
         <>
-            <Label for="name"></Label>
-            <StyledInput className={className} type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" placeholder={placeholder} onChange={onChange}/>
+        <Input placeholder="Basic usageasd" />
         </>
     )
 }
 
-export default Input;
+export default StyledInput;
